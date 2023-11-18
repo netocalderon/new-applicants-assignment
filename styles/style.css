@@ -9,9 +9,74 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     background-color: #000;
     color: #fff;
 }
 
 /* Add your css  */
+
+.display {
+    height: 60px;
+    color: white;
+    width: 340px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-style: bold;
+    background-color: darkseagreen;
+    text-align: right;
+
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    box-shadow: 0px 3px 30px rgba(242, 243, 245, 0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-image: linear-gradient(135deg, #355a67 0%, #1c1e1c 100%);
+    box-shadow: 2px 5px 5px #355a67;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.number:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.number:active {
+    opacity: 0.5;
+}
+::placeholder {
+    color: white;
+}
+#equal {
+    background-image: linear-gradient(135deg, #04fc18 0%, #1c1e1c 100%);
+
+}
